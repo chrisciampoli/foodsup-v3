@@ -39,7 +39,6 @@ const FeaturedRow = ({ id, title, description }) => {
       </View>
 
       <Text className="text-xs text-gray-500 px-4">{description}</Text>
-     {console.log(restaurants)}
       <ScrollView
         horizontal
         contentContainerStyle={{

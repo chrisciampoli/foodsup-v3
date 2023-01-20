@@ -17,6 +17,8 @@ import {
 import Categories from "../components/Categories";
 import FeaturedRow from "../components/FeaturedRow";
 import sanityClient from "../sanity";
+import { auth } from "../firebaseConfig";
+import { signOut } from "firebase/auth";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -54,6 +56,14 @@ const HomeScreen = () => {
       });
   }, []);
 
+  const logout = () => {
+    signOut(auth).then(() => {
+      navigation.navigate('Login');
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
+
   return (
     <SafeAreaView className="bg-white pt-5">
       {/* Header */}
@@ -73,7 +83,7 @@ const HomeScreen = () => {
           </Text>
         </View>
 
-        <UserIcon size={35} color="00CCBB" />
+        <UserIcon size={35} color="00CCBB" onPress={logout}/>
       </View>
 
       {/* Search */}
