@@ -1876,6 +1876,18 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@headlessui/react@^1.7.9":
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.9.tgz#fcb4cf50afbb2161cf7ea8e2301805ec05c24e49"
+  integrity sha512-Bobh/+mDciu8kEE2hvdukFYjbfaG4MEkK/6TjWOgqcODLKYpRhWPKPE+dCcCSz/YrwjFVrEAMOiWtfk6sW20/w==
+  dependencies:
+    client-only "^0.0.1"
+
+"@heroicons/react@^2.0.14":
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.14.tgz#9cc23b8978b1829239250b3d7846cff16c58e9f5"
+  integrity sha512-eFL4if6L7woL1fUvk/jjXx4z9NxVESHHrQnEd2qKVelTFTIr/3VLGWdPb0biia9ZVe26P0JSs/xmOlRNur3SrQ==
+
 "@jest/create-cache-key-function@^29.0.3":
   version "29.3.1"
   resolved "https://registry.yarnpkg.com/@jest/create-cache-key-function/-/create-cache-key-function-29.3.1.tgz#3a0970ea595ab3d9507244edbcef14d6b016cdc9"
@@ -3802,6 +3814,11 @@ cli-spinners@^2.0.0, cli-spinners@^2.5.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.7.0.tgz#f815fd30b5f9eaac02db604c7a231ed7cb2f797a"
   integrity sha512-qu3pN8Y3qHNgE2AFweciB1IfMnmZ/fsNTEE+NOFjmGB2F/7rLhnhzppvpCnN4FovtP26k8lHyy9ptEbNwWFLzw==
+
+client-only@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
+  integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
 
 cliui@^5.0.0:
   version "5.0.0"
@@ -7197,7 +7214,7 @@ lodash.camelcase@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==
 
-lodash.debounce@^4.0.8:
+lodash.debounce@*, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
@@ -9223,7 +9240,7 @@ prompts@^2.3.2, prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.0, prop-types@^15.7.2:
+prop-types@*, prop-types@^15.6.0, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -9350,6 +9367,11 @@ qs@6.11.0:
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
   dependencies:
     side-channel "^1.0.4"
+
+qs@~6.9.1:
+  version "6.9.7"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.7.tgz#4610846871485e1e048f44ae3b94033f0e675afe"
+  integrity sha512-IhMFgUmuNpyRfxA90umL7ByLlgRXu6tIfKPpF5TmcfRLlLCckfP/g3IQmju6jjpu+Hh8rA+2p6A27ZSPOOHdKw==
 
 query-string@^7.1.3:
   version "7.1.3"
@@ -9518,6 +9540,16 @@ react-native-animatable@^1.3.3:
   dependencies:
     prop-types "^15.7.2"
 
+react-native-autocomplete-dropdown@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-autocomplete-dropdown/-/react-native-autocomplete-dropdown-2.1.1.tgz#08783892cf388180aa4382afc272d9ceb255cc76"
+  integrity sha512-U7k7UYdr9GGDi/oT4oJO+9fnHgGebt8NDMuoHmRkMwW5N1NADdBMv1fX2+SoW1bqqqi9bHYMkOCVnKqzD8/33Q==
+  dependencies:
+    lodash.debounce "*"
+    prop-types "*"
+    react-native-size-matters "^0.4.0"
+    react-native-vector-icons ">=7.0.0"
+
 react-native-codegen@^0.70.6:
   version "0.70.6"
   resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.70.6.tgz#2ce17d1faad02ad4562345f8ee7cbe6397eda5cb"
@@ -9541,6 +9573,15 @@ react-native-elements@^3.4.3:
     opencollective-postinstall "^2.0.3"
     react-native-ratings "8.0.4"
     react-native-size-matters "^0.3.1"
+
+react-native-google-places-autocomplete@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/react-native-google-places-autocomplete/-/react-native-google-places-autocomplete-2.5.1.tgz#93d5ac3e34e3e8f594aae5349f9e2d3e0b87484e"
+  integrity sha512-2FZZomogB18mLSC/N39UcpiVoJn/fFIpud1M2KZMom/pJhSMgfqV4qLjHuzaDyYIl7KBz/zpGDcbYgmtvvpkHQ==
+  dependencies:
+    lodash.debounce "^4.0.8"
+    prop-types "^15.7.2"
+    qs "~6.9.1"
 
 react-native-gradle-plugin@^0.70.3:
   version "0.70.3"
@@ -9591,6 +9632,11 @@ react-native-size-matters@^0.3.1:
   resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.3.1.tgz#24d0cfc335a2c730f6d58bd7b43ea5a41be4b49f"
   integrity sha512-mKOfBLIBFBcs9br1rlZDvxD5+mAl8Gfr5CounwJtxI6Z82rGrMO+Kgl9EIg3RMVf3G855a85YVqHJL2f5EDRlw==
 
+react-native-size-matters@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.4.0.tgz#01bfd0d59454318f4e0b13fe9c1eb0523d70f2e0"
+  integrity sha512-8/C0htHrFWeUm9N8JegmadovUfgTWkGBkDPZ1N3YkXtDWb+98Ya2gThiKcu445r8c7YhcrBfnHz/mYsXIusaOQ==
+
 react-native-svg@13.4.0:
   version "13.4.0"
   resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-13.4.0.tgz#82399ba0956c454144618aa581e2d748dd3f010a"
@@ -9598,6 +9644,14 @@ react-native-svg@13.4.0:
   dependencies:
     css-select "^5.1.0"
     css-tree "^1.1.3"
+
+react-native-vector-icons@>=7.0.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-9.2.0.tgz#3c0c82e95defd274d56363cbe8fead8d53167ebd"
+  integrity sha512-wKYLaFuQST/chH3AJRjmOLoLy3JEs1JR6zMNgTaemFpNoXs0ztRnTxcxFD9xhX7cJe1/zoN5BpQYe7kL0m5yyA==
+  dependencies:
+    prop-types "^15.7.2"
+    yargs "^16.1.1"
 
 react-native-web@~0.18.7:
   version "0.18.10"
@@ -11866,7 +11920,7 @@ yargs@^15.1.0, yargs@^15.3.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
 
-yargs@^16.2.0:
+yargs@^16.1.1, yargs@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
   integrity sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==

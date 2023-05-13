@@ -14,6 +14,7 @@ import {
   MagnifyingGlassIcon,
   AdjustmentsVerticalIcon,
 } from "react-native-heroicons/outline";
+import AutocompleteSearch from "../components/AutocompleteSearch";
 import Categories from "../components/Categories";
 import FeaturedRow from "../components/FeaturedRow";
 import sanityClient from "../sanity";
@@ -23,6 +24,7 @@ import { signOut } from "firebase/auth";
 const HomeScreen = () => {
   const navigation = useNavigation();
   const [featuredCategories, setFeaturedCategories] = useState([]);
+  const [meals, setMeals] = useState([]);
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -83,17 +85,14 @@ const HomeScreen = () => {
           </Text>
         </View>
 
-        <UserIcon size={35} color="00CCBB" onPress={logout}/>
+        <UserIcon size={35} color="00CCBB" onPress={logout} />
       </View>
 
       {/* Search */}
       <View className="flex-row items-center space-x-2 pb-2 mx-4">
         <View className="flex-row space-x-2 flex-1 bg-gray-200 p-3">
           <MagnifyingGlassIcon color="gray" size={20} />
-          <TextInput
-            placeholder="Restaurants and cuisines"
-            keyboardType="default"
-          />
+          <AutocompleteSearch />
         </View>
 
         <AdjustmentsVerticalIcon color="00CCBB" />
